@@ -1,0 +1,62 @@
+Base de datos mongodb usando:
+al no ser modelo relacional y no tener dependencia se crearon solo estos dos todo la lologica se encuentra con axios para el manejo de peticiones del
+front end al back end y en back con cors y express se maneja la informacion ademas de moogosee.
+  
+Modelo de clothes:
+
+clothes({
+    nombreProducto: {
+        type:String,
+        require:true
+    } ,
+    precio: {
+        type:String,
+        require:true
+    } 
+    ,
+    referencia: {
+        type:String,
+        require:true
+    } ,
+    talla: {
+        type:String,
+        require:true
+    } ,
+    color: {
+        type:String,
+        require:true
+    } ,
+    categoria: {
+        type:String,
+        require:true
+    },
+    imagep:{
+        type:String,
+        require:true
+    }
+});
+
+Modelo de Usuario:
+
+
+users({
+    userName:{
+        type: String,
+        require:true
+    },
+    userPass:{
+        type:String,
+        require:true
+    },
+    charge:{
+        type:String,
+        require:true
+    }
+})
+
+/////////////////////////////////////
+estas modelos se pueden encontrar en el backend
+para generalos en la base de dato solo es tener la conexiones
+y configuraciones.
+
+
